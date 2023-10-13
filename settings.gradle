@@ -1,0 +1,8 @@
+rootProject.name = 'java-tasks'
+include 'task1'
+include 'task2'
+include 'task3'
+include 'experiment2'
+include 'task4'
+include 'hero'
+
