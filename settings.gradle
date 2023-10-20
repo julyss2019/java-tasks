@@ -1,4 +1,4 @@
-rootProject.name = 'JavaTasks'
+rootProject.name = 'java-tasks'
 include 'task1'
 include 'task2'
 include 'task3'
@@ -10,4 +10,5 @@ include 'task_5'
 include 'task_4_2'
 include 'task_4_3'
 include 'task_5_1'
+include 'class-task-231020'
 
