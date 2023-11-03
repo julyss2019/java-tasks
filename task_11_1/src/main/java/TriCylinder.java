@@ -23,8 +23,7 @@ public class TriCylinder {
         this.height = height;
     }
 
-    // 表面积 = 2 * [(底边长) * (底边长) * (根号3 / 4)] + 3 * (底边长) * (高)
     public double findArea() {
-        return 2 * (Math.pow(side, 2) * Math.sqrt(3) / 4) + 3 * side * height;
+        return 3 * (Math.sqrt(3) * Math.pow(side, 2)) / 4 + 3 * side * height;
     }
 }
