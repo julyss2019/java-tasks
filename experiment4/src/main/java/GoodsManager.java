@@ -1,4 +1,4 @@
-public class GoodsManage {
+public class GoodsManager {
     private final GoodsGroup[] goodsGroups = new GoodsGroup[2];
 
     public GoodsGroup findByCategory(String category) {
@@ -7,7 +7,7 @@ public class GoodsManage {
                 return null;
             }
 
-            if (goodGroup.getCatory().equals(category)) {
+            if (goodGroup.getCategory().equals(category)) {
                 return goodGroup;
             }
         }
@@ -64,7 +64,7 @@ public class GoodsManage {
     public void show() {
         for (GoodsGroup goodsGroup : goodsGroups) {
             if (goodsGroup != null) {
-                System.out.printf("类别:%s,货物有: %n", goodsGroup.getCatory());
+                System.out.printf("类别:%s,货物有: %n", goodsGroup.getCategory());
                 goodsGroup.printAll();
             }
         }

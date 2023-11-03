@@ -1,39 +1,49 @@
 public class Student {
     private String name;
-    private String ID;
-    private double[] score = new double[3];
+    private String id;
+    private final double[] scores = new double[3];
 
-    public Student(String a, String b) {
-        name = a;
-        ID = b;
+    public Student(String name, String id) {
+        this.name = name;
+        this.id = id;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getID() {
-        return ID;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public boolean setScore(double[] fenshu) {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public boolean setScore(double[] score) {
         for (int i = 0; i < 3; i++) {
-            if (fenshu[i] < 0 || fenshu[i] > 100) {
+            if (score[i] < 0 || score[i] > 100) {
                 return false;
             }
-            score[i] = fenshu[i];
+
+            scores[i] = score[i];
         }
+
         return true;
     }
 
-    public double[] getScore() {
-        return score;
+    public double[] getScores() {
+        return scores;
     }
 
     public double sum() {
         double total = 0;
         for (int i = 0; i < 3; i++) {
-            total += score[i];
+            total += scores[i];
         }
         return total;
     }
@@ -43,14 +53,14 @@ public class Student {
     }
 
     public double[] max_min() {
-        double maxScore = score[0];
-        double minScore = score[0];
+        double maxScore = scores[0];
+        double minScore = scores[0];
         for (int i = 1; i < 3; i++) {
-            if (score[i] > maxScore) {
-                maxScore = score[i];
+            if (scores[i] > maxScore) {
+                maxScore = scores[i];
             }
-            if (score[i] < minScore) {
-                minScore = score[i];
+            if (scores[i] < minScore) {
+                minScore = scores[i];
             }
         }
         double[] maxMin = {maxScore, minScore};
