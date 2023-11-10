@@ -1,39 +1,11 @@
 public class SuperHero {
-    private String name = "超级英雄";
-    private String occupation = "维护世界和平";
-    private String task = "打败洛基";
+    public String name = "超级英雄";
+    String occupation = "维护世界和平";
+    protected String task = "打败洛基";
     private String headquarters = "S.H.I.E.L.D";
 
     public SuperHero(String name) {
         this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    String getOccupation() {
-        return occupation;
-    }
-
-    void setOccupation(String occupation) {
-        this.occupation = occupation;
-    }
-
-    public String getTask() {
-        return task;
-    }
-
-    protected void setTask(String task) {
-        this.task = task;
-    }
-
-    public String getHeadquarters() {
-        return headquarters;
     }
 
     public void introduce() {
@@ -58,5 +30,9 @@ public class SuperHero {
 
     private void recruit() {
         System.out.println("快来加入");
+    }
+
+    public String getHeadquarters() {
+        return headquarters;
     }
 }

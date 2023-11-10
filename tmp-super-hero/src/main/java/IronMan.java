@@ -20,7 +20,7 @@ public class IronMan extends SuperHero {
                 "我的武器是: %s\n" +
                 "我的职业是: %s\n" +
                 "我的任务是: %s\n" +
-                "我的指挥部是: %s\n", getName(), getName(), weapon, getOccupation(), getTask(), getHeadquarters());
+                "我的指挥部是: %s\n", name, name, weapon, occupation, task, getHeadquarters());
         attack();
         ability();
         contact();
