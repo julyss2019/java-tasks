@@ -1,4 +1,4 @@
-public class Circle extends Shape {
+public final class Circle extends Shape {
     private final double r;
 
     public Circle(double r) {
