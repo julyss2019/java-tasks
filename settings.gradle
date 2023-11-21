@@ -33,4 +33,5 @@ include 'tmp-student'
 include 'task-12-3'
 include 'task-13-1'
 include 'tmp-animal'
+include 'task-13-3'
 
