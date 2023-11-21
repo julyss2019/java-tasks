@@ -14,4 +14,12 @@ public class Circle extends Shape {
     double getPerimeter() {
         return 2 * Math.PI * r;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Circle{");
+        sb.append("r=").append(r);
+        sb.append('}');
+        return sb.toString();
+    }
 }

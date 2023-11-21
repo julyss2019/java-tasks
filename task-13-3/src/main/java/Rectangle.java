@@ -16,4 +16,13 @@ public class Rectangle extends Shape{
     double getPerimeter() {
         return 2 * (width + length);
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Rectangle{");
+        sb.append("width=").append(width);
+        sb.append(", length=").append(length);
+        sb.append('}');
+        return sb.toString();
+    }
 }

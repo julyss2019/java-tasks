@@ -16,4 +16,13 @@ public class Triangle extends Shape {
     double getPerimeter() {
         return base + height + Math.sqrt(Math.pow(base, 2) + Math.pow(height, 2));
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Triangle{");
+        sb.append("base=").append(base);
+        sb.append(", height=").append(height);
+        sb.append('}');
+        return sb.toString();
+    }
 }

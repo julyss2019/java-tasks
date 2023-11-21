@@ -6,6 +6,6 @@ public class Test {
     }
 
     private static void test(Shape shape) {
-        System.out.println(String.format("%s 周长: %f, 面积: %f", shape.getClass().getSimpleName(), shape.getPerimeter(), shape.getArea()));
+        System.out.println(String.format("%s 周长: %f, 面积: %f", shape, shape.getPerimeter(), shape.getArea()));
     }
 }
